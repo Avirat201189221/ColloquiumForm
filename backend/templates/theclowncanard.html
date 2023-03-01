@@ -26,11 +26,19 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <div class="nav-link-flex">
-            <a class="nav-link" href="register">Pixel And What The Buzz</a>
+            <a class="nav-link" href="pixel">Pixel</a>
             <span class="ball-animation"></span>
           </div>
           <div class="nav-link-flex">
-            <a class="nav-link" href="movie&speaker">Movie And Speaker Session</a>
+            <a class="nav-link" href="wtb">What The Buzz</a>
+            <span class="ball-animation"></span>
+          </div>
+          <div class="nav-link-flex">
+            <a class="nav-link" href="movie">Movie Night</a>
+            <span class="ball-animation"></span>
+          </div>
+          <div class="nav-link-flex">
+            <a class="nav-link" href="speaker">Speaker Session</a>
             <span class="ball-animation"></span>
           </div>
           <div class="nav-link-flex">
@@ -61,10 +69,10 @@
       <form action="clowncanard" method="post">
         {% csrf_token %}
         <div class="user__details">
-          {% comment %} <div class="input__box">
+          <div class="input__box">
             <span class="details">Team Name *</span>
             <input type="text" placeholder="Team's Name" required name="teamname" />
-          </div> {% endcomment %}
+        </div>
 
           <div class="input__box">
             <span class="details">Leader's Name *</span>
@@ -124,44 +132,6 @@
             <input type="email" placeholder="Email"  name="teammate2email" />
           </div>
         </div> 
-
-        {% comment %} Teammate 3 {% endcomment %}
-        {% comment %} <div class="title">Teammate 3</div>
-        <div class="user__details">
-          <div class="input__box">
-            <span class="details">Teammate Name</span>
-            <input type="text" placeholder="Name" name="teammate3name" />
-          </div>
-
-          <div class="input__box">
-            <span class="details">Teammate Roll No</span>
-            <input type="number" placeholder="Roll No" name="teammate3rollno" />
-          </div>
-
-          <div class="input__box">
-            <span class="details">Teammate Email</span>
-            <input type="email" placeholder="Email" name="teammate3email" />
-          </div>
-        </div>  {% endcomment %}
-
-        {% comment %} Teammate 4 {% endcomment %}
-        {% comment %} <div class="title">Teammate 4</div>
-        <div class="user__details">
-          <div class="input__box">
-            <span class="details">Teammate Name</span>
-            <input type="text" placeholder="Name" name="teammate4name" />
-          </div>
-
-          <div class="input__box">
-            <span class="details">Teammate Roll No</span>
-            <input type="number" placeholder="Roll No" name="teammate4rollno" />
-          </div>
-
-          <div class="input__box">
-            <span class="details">Teammate Email</span>
-            <input type="email" placeholder="Email" name="teammate4email" />
-          </div>
-        </div> {% endcomment %}
 
         <div class="button">
           <input type="submit" value="Submit" />

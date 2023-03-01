@@ -26,11 +26,19 @@
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <div class="nav-link-flex">
-                <a class="nav-link" href="register">Pixel And What The Buzz</a>
+                <a class="nav-link" href="pixel">Pixel</a>
                 <span class="ball-animation"></span>
               </div>
               <div class="nav-link-flex">
-                <a class="nav-link" href="movie&speaker">Movie And Speaker Session</a>
+                <a class="nav-link" href="wtb">What The Buzz</a>
+                <span class="ball-animation"></span>
+              </div>
+              <div class="nav-link-flex">
+                <a class="nav-link" href="movie">Movie Night</a>
+                <span class="ball-animation"></span>
+              </div>
+              <div class="nav-link-flex">
+                <a class="nav-link" href="speaker">Speaker Session</a>
                 <span class="ball-animation"></span>
               </div>
               <div class="nav-link-flex">
@@ -54,13 +62,16 @@
   <div class="form-body">
     <div class="container">
         <center>
-            <h1 class="form-title">Pixel and What The Buzz Registrations</h1>
+            <h1 class="form-title">What The Buzz Registrations</h1>
           </center>
       <div class="title">Team Details</div>
-      <form action="register" method="post">
+      <form action="wtb" method="post">
         {% csrf_token %}
         <div class="user__details">
-
+        <div class="input__box">
+            <span class="details">Team Name *</span>
+            <input type="text" placeholder="Team's Name" required name="teamname" />
+        </div> 
           <div class="input__box">
             <span class="details">Leader's Name *</span>
             <input type="text" placeholder="Name" required name="leadername" />
@@ -74,11 +85,6 @@
           <div class="input__box">
             <span class="details">Leader's Email *</span>
             <input type="email" placeholder="Email" required name="leaderemail" />
-          </div>
-
-          <div class="input__box">
-            <span class="details">Leader's Phone Number *</span>
-            <input type="tel" pattern="[0-9]{10}" placeholder="Enter 10-digit Phone Number" required name="leaderpno" />
           </div>
         </div>
 
@@ -120,13 +126,6 @@
           </div>
         </div> 
 
-        <div class="input__box">
-            <p class="details">Select Events:-</p>
-            <input type="checkbox" name="p" value="Pixel">
-            <label for="p">Pixel</label><br>
-            <input type="checkbox" name="wtb" value="WhatTheBuzz">
-            <label for="wtb">What The Buzz</label><br>
-          </div>
 
         <div class="button">
           <input type="submit" value="Submit" />

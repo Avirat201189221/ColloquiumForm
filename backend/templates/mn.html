@@ -26,11 +26,19 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <div class="nav-link-flex">
-            <a class="nav-link" href="register">Pixel And What The Buzz</a>
+            <a class="nav-link" href="pixel">Pixel</a>
             <span class="ball-animation"></span>
           </div>
           <div class="nav-link-flex">
-            <a class="nav-link" href="movie&speaker">Movie And Speaker Session</a>
+            <a class="nav-link" href="wtb">What The Buzz</a>
+            <span class="ball-animation"></span>
+          </div>
+          <div class="nav-link-flex">
+            <a class="nav-link" href="movie">Movie Night</a>
+            <span class="ball-animation"></span>
+          </div>
+          <div class="nav-link-flex">
+            <a class="nav-link" href="speaker">Speaker Session</a>
             <span class="ball-animation"></span>
           </div>
           <div class="nav-link-flex">
@@ -57,10 +65,10 @@
   <div class="form-body">
     <div class="container">
       <center>
-        <h1 class="form-title">Movie And Speaker Session Registrations</h1>
+        <h1 class="form-title">Movie Night Registrations</h1>
       </center>
       <div class="title">Your Details</div>
-      <form action="movie&speaker" method="post">
+      <form action="movie" method="post">
         {% csrf_token %}
         <div class="user__details">
 
@@ -85,13 +93,6 @@
           </div>
         </div>
 
-        <div class="input__box">
-          <p class="details">Select Events:-</p>
-          <input type="checkbox" name="ms" value="MovieSession">
-          <label for="ms">Movie Night</label><br>
-          <input type="checkbox" name="ss" value="SpeakerSession">
-          <label for="ss">Speaker Session</label><br>
-      </div>
 
         <div class="button">
           <input type="submit" value="Submit" />

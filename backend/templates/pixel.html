@@ -54,7 +54,6 @@
       </div>
     </div>
   </nav>
-
   {%for message in messages%}
   <center>
     <h3 style="color:white">{{message}}</h3>
@@ -62,18 +61,17 @@
   {% endfor %}
   <div class="form-body">
     <div class="container">
-      <center>
-        <h1 class="form-title">Code O Clock Registrations</h1>
-      </center>
+        <center>
+            <h1 class="form-title">Pixel Registrations</h1>
+          </center>
       <div class="title">Team Details</div>
-      <form action="code" method="post">
+      <form action="pixel" method="post">
         {% csrf_token %}
         <div class="user__details">
-          <div class="input__box">
+        <div class="input__box">
             <span class="details">Team Name *</span>
             <input type="text" placeholder="Team's Name" required name="teamname" />
-        </div>
-        
+        </div> 
           <div class="input__box">
             <span class="details">Leader's Name *</span>
             <input type="text" placeholder="Name" required name="leadername" />
@@ -88,89 +86,45 @@
             <span class="details">Leader's Email *</span>
             <input type="email" placeholder="Email" required name="leaderemail" />
           </div>
-
-          <div class="input__box">
-            <span class="details">Leader's Phone Number *</span>
-            <input type="tel" pattern="[0-9]{10}" placeholder="Enter 10-digit Phone Number" required name="leaderpno" />
-          </div>
         </div>
 
         {% comment %} Teammate 1 {% endcomment %}
         <div class="title">Teammate 1</div>
         <div class="user__details">
           <div class="input__box">
-            <span class="details">Teammate Name </span>
-            <input type="text" placeholder="Name" name="teammate1name" />
+            <span class="details">Teammate Name *</span>
+            <input type="text" placeholder="Name" required name="teammate1name" />
           </div>
 
           <div class="input__box">
-            <span class="details">Teammate Roll No </span>
-            <input type="number" placeholder="Roll No" name="teammate1rollno" />
+            <span class="details">Teammate Roll No* </span>
+            <input type="number" placeholder="Roll No" required name="teammate1rollno" />
           </div>
 
           <div class="input__box">
-            <span class="details">Teammate Email </span>
-            <input type="email" placeholder="Email" name="teammate1email" />
+            <span class="details">Teammate Email *</span>
+            <input type="email" placeholder="Email" required name="teammate1email" />
           </div>
         </div> 
 
         {% comment %} Teammate 2 {% endcomment %}
-        {% comment %} <div class="title">Teammate 2</div>
+        <div class="title">Teammate 2</div>
         <div class="user__details">
           <div class="input__box">
-            <span class="details">Teammate Name</span>
+            <span class="details">Teammate Name *</span>
             <input type="text" placeholder="Name" required name="teammate2name" />
           </div>
 
           <div class="input__box">
-            <span class="details">Teammate Roll No</span>
+            <span class="details">Teammate Roll No *</span>
             <input type="number" placeholder="Roll No" required name="teammate2rollno" />
           </div>
 
           <div class="input__box">
-            <span class="details">Teammate Email</span>
+            <span class="details">Teammate Email *</span>
             <input type="email" placeholder="Email" required name="teammate2email" />
           </div>
-        </div>  {% endcomment %}
-
-        {% comment %} Teammate 3 {% endcomment %}
-        {% comment %} <div class="title">Teammate 3</div>
-        <div class="user__details">
-          <div class="input__box">
-            <span class="details">Teammate Name</span>
-            <input type="text" placeholder="Name" name="teammate3name" />
-          </div>
-
-          <div class="input__box">
-            <span class="details">Teammate Roll No</span>
-            <input type="number" placeholder="Roll No" name="teammate3rollno" />
-          </div>
-
-          <div class="input__box">
-            <span class="details">Teammate Email</span>
-            <input type="email" placeholder="Email" name="teammate3email" />
-          </div>
-        </div> {% endcomment %}
-
-        {% comment %} Teammate 4 {% endcomment %}
-        {% comment %} <div class="title">Teammate 4</div>
-        <div class="user__details">
-          <div class="input__box">
-            <span class="details">Teammate Name</span>
-            <input type="text" placeholder="Name" name="teammate4name" />
-          </div>
-
-          <div class="input__box">
-            <span class="details">Teammate Roll No</span>
-            <input type="number" placeholder="Roll No" name="teammate4rollno" />
-          </div>
-
-          <div class="input__box">
-            <span class="details">Teammate Email</span>
-            <input type="email" placeholder="Email" name="teammate4email" />
-          </div>
-        </div> {% endcomment %}
-
+        </div> 
         <div class="button">
           <input type="submit" value="Submit" />
         </div>
