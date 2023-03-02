@@ -34,22 +34,26 @@ body {
     }
 }
 .form-title {
-  color: black;
+  color: white;
   margin: 1rem;
   margin-bottom: 2rem;
+  padding-top: 1rem;
+  font-weight: bolder;
 }
 /* container and form */
 .container {
   max-width: 700px;
   width: 100%;
-  background: #fff;
+  background: #ffffff40;
   padding: 25px 30px;
-  border-radius: 5px;
+  border-radius: 2rem;
 }
 .container .title {
   font-size: 25px;
   font-weight: 500;
   position: relative;
+  color: white;
+
 }
 
 .container .title::before {
@@ -82,6 +86,7 @@ form .user__details .input__box {
   font-weight: 500;
   margin-bottom: 5px;
   display: block;
+  color: white;
 }
 .user__details .input__box input {
   height: 45px;

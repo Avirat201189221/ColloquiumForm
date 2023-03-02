@@ -14,18 +14,20 @@ def pixel(request):
         leaderName = request.POST.get("leadername")
         leaderRollNo = request.POST.get("leaderrollno")
         leaderEmail = request.POST.get("leaderemail")
-        # leaderPhoneNumber = request.POST.get("leaderpno")
+        leaderPhoneNumber = request.POST.get("leaderpno")
 
         teammate1Name = request.POST.get("teammate1name")
         teammate1RollNo = request.POST.get("teammate1rollno")
         teammate1Email = request.POST.get("teammate1email")
+        teammate1PhoneNumber = request.POST.get("teammate1pno")
 
         teammate2Name = request.POST.get("teammate2name")
         teammate2RollNo = request.POST.get("teammate2rollno")
         teammate2Email = request.POST.get("teammate2email")
+        teammate2PhoneNumber = request.POST.get("teammate2pno")
 
-        team = PTeam(team_name=teamName, leader_name=leaderName, leader_roll_no=leaderRollNo, leader_thapar_email=leaderEmail, teammate1_name=teammate1Name, teammate1_roll_no=teammate1RollNo, teammate1_thapar_email=teammate1Email, teammate2_name=teammate2Name,
-                             teammate2_roll_no=teammate2RollNo, teammate2_thapar_email=teammate2Email)
+        team = PTeam(team_name=teamName, leader_name=leaderName, leader_roll_no=leaderRollNo, leader_thapar_email=leaderEmail,leader_phone_no=leaderPhoneNumber, teammate1_name=teammate1Name, teammate1_roll_no=teammate1RollNo, teammate1_thapar_email=teammate1Email,teammate1_phone_no=teammate1PhoneNumber, teammate2_name=teammate2Name,
+                             teammate2_roll_no=teammate2RollNo, teammate2_thapar_email=teammate2Email,teammate2_phone_no=teammate2PhoneNumber)
         team.save()
     return render(request, "pixel.html") 
 
@@ -70,18 +72,20 @@ def wtb(request):
         leaderName = request.POST.get("leadername")
         leaderRollNo = request.POST.get("leaderrollno")
         leaderEmail = request.POST.get("leaderemail")
-        # leaderPhoneNumber = request.POST.get("leaderpno")
+        leaderPhoneNumber = request.POST.get("leaderpno")
 
         teammate1Name = request.POST.get("teammate1name")
         teammate1RollNo = request.POST.get("teammate1rollno")
         teammate1Email = request.POST.get("teammate1email")
+        teammate1PhoneNumber = request.POST.get("teammate1pno")
 
         teammate2Name = request.POST.get("teammate2name")
         teammate2RollNo = request.POST.get("teammate2rollno")
         teammate2Email = request.POST.get("teammate2email")
+        teammate2PhoneNumber = request.POST.get("teammate2pno")
 
-        team = WTB(team_name=teamName, leader_name=leaderName, leader_roll_no=leaderRollNo, leader_thapar_email=leaderEmail, teammate1_name=teammate1Name, teammate1_roll_no=teammate1RollNo, teammate1_thapar_email=teammate1Email, teammate2_name=teammate2Name,
-                             teammate2_roll_no=teammate2RollNo, teammate2_thapar_email=teammate2Email)
+        team = PTeam(team_name=teamName, leader_name=leaderName, leader_roll_no=leaderRollNo, leader_thapar_email=leaderEmail,leader_phone_no=leaderPhoneNumber, teammate1_name=teammate1Name, teammate1_roll_no=teammate1RollNo, teammate1_thapar_email=teammate1Email,teammate1_phone_no=teammate1PhoneNumber, teammate2_name=teammate2Name,
+                             teammate2_roll_no=teammate2RollNo, teammate2_thapar_email=teammate2Email,teammate2_phone_no=teammate2PhoneNumber)
         team.save()
 
     return render(request,"wtb.html")
@@ -94,14 +98,15 @@ def code(request):
         leaderName = request.POST.get("leadername")
         leaderRollNo = request.POST.get("leaderrollno")
         leaderEmail = request.POST.get("leaderemail")
-        # leaderPhoneNumber = request.POST.get("leaderpno")
+        leaderPhoneNumber = request.POST.get("leaderpno")
 
         teammate1Name = request.POST.get("teammate1name")
         teammate1RollNo = request.POST.get("teammate1rollno")
         teammate1Email = request.POST.get("teammate1email")
+        teammate1PhoneNumber = request.POST.get("teammate1pno")
 
 
-        team = CodeOClock(team_name=teamName, leader_name=leaderName, leader_roll_no=leaderRollNo, leader_thapar_email=leaderEmail, teammate1_name=teammate1Name, teammate1_roll_no=teammate1RollNo, teammate1_thapar_email=teammate1Email)
+        team = CodeOClock(team_name=teamName, leader_name=leaderName, leader_roll_no=leaderRollNo, leader_thapar_email=leaderEmail,leader_phone_no=leaderPhoneNumber, teammate1_name=teammate1Name, teammate1_roll_no=teammate1RollNo, teammate1_thapar_email=teammate1Email,teammate1_phone_no=teammate1PhoneNumber)
         team.save()
 
     return render(request,"codeoclock.html")
@@ -114,18 +119,20 @@ def cc(request):
         leaderName = request.POST.get("leadername")
         leaderRollNo = request.POST.get("leaderrollno")
         leaderEmail = request.POST.get("leaderemail")
-        # leaderPhoneNumber = request.POST.get("leaderpno")
+        leaderPhoneNumber = request.POST.get("leaderpno")
 
         teammate1Name = request.POST.get("teammate1name")
         teammate1RollNo = request.POST.get("teammate1rollno")
         teammate1Email = request.POST.get("teammate1email")
+        teammate1PhoneNumber = request.POST.get("teammate1pno")
 
         teammate2Name = request.POST.get("teammate2name")
         teammate2RollNo = request.POST.get("teammate2rollno")
         teammate2Email = request.POST.get("teammate2email")
+        teammate2PhoneNumber = request.POST.get("teammate2pno")
 
-        team = ClownCanard(team_name=teamName, leader_name=leaderName, leader_roll_no=leaderRollNo, leader_thapar_email=leaderEmail, teammate1_name=teammate1Name, teammate1_roll_no=teammate1RollNo, teammate1_thapar_email=teammate1Email, teammate2_name=teammate2Name,
-                             teammate2_roll_no=teammate2RollNo, teammate2_thapar_email=teammate2Email)
+        team = ClownCanard(team_name=teamName, leader_name=leaderName, leader_roll_no=leaderRollNo, leader_thapar_email=leaderEmail,leader_phone_no=leaderPhoneNumber, teammate1_name=teammate1Name, teammate1_roll_no=teammate1RollNo, teammate1_thapar_email=teammate1Email,teammate1_phone_no=teammate1PhoneNumber, teammate2_name=teammate2Name,
+                             teammate2_roll_no=teammate2RollNo, teammate2_thapar_email=teammate2Email,teammate2_phone_no=teammate2PhoneNumber)
         team.save()
 
 
