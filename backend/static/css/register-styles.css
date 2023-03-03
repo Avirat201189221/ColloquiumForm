@@ -6,6 +6,15 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+.img{
+  max-width:450px;
+  padding-bottom: 2rem;
+}
+@media screen and (max-width: 525px) {
+  .img{
+    width: 70vw;
+  }
+}
 
 :root {
   --main-blue: #71b7e6;
@@ -47,7 +56,9 @@ body {
   background: #ffffff40;
   padding: 25px 30px;
   border-radius: 2rem;
+  margin-top: 7rem;
 }
+
 .container .title {
   font-size: 25px;
   font-weight: 500;
