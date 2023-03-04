@@ -24,11 +24,7 @@
 }
 
 body {
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 1) 30%,
-    #630202 100%
-  );
+  background: black;
 }
 .reg-img:hover {
   transform: scale(1.1);
