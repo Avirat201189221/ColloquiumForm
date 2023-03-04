@@ -6,6 +6,8 @@ from app.models import Speaker
 from app.models import ClownCanard
 from app.models import CodeOClock
 # Create your views here.
+def home(request):
+    return render(request,"home.html")
 def pixel(request):
     if request.method == "POST":
 
