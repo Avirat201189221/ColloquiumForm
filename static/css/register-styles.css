@@ -37,11 +37,11 @@ body {
   align-items: center; /* center horizontally */
   padding: 10px;
 }
-@media screen and (min-width: 1100px) {
+/* @media screen and (min-width: 1100px) {
     .form-body{
     height: 100vh;
     }
-}
+} */
 .form-title {
   color: white;
   margin: 1rem;
