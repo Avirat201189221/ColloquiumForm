@@ -5,8 +5,8 @@ urlpatterns = [
     path('pixel',views.pixel,name='register'),
     path('wtb',views.wtb,name='whatthebuzz'),
     path('success',views.sucess,name='success'),
-    path('movie',views.mn,name='movie'),
-    path('speaker',views.speaker,name='speaker'),
+    # path('movie',views.mn,name='movie'),
+    # path('speaker',views.speaker,name='speaker'),
     path('code',views.code,name='codeoclock'),
     path('clowncanard',views.cc,name='theclowncanard'),
 ]
