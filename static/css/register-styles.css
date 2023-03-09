@@ -49,6 +49,10 @@ body {
   padding-top: 1rem;
   font-weight: bolder;
 }
+.prelim-link:hover{
+  color:white;
+  transform: scale(1.1);
+}
 /* container and form */
 .container {
   max-width: 700px;
