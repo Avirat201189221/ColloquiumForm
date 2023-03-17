@@ -15,45 +15,45 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg mr-auto">
-        <div class="container-fluid">
-          {% comment %} <a class="navbar-brand" href="#"><img class="sponsor-image"
-              src="{%static 'images/Hackonix-gold-O.png' %}" class="hackonix-o"></a> {% endcomment %}
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <div class="nav-link-flex">
-                <a class="nav-link" href="pixel">Pixel</a>
-                <span class="ball-animation"></span>
-              </div>
-              <div class="nav-link-flex">
-                <a class="nav-link" href="wtb">What The Buzz</a>
-                <span class="ball-animation"></span>
-              </div>
-              {% comment %} <div class="nav-link-flex">
-                <a class="nav-link" href="movie">Movie Night</a>
-                <span class="ball-animation"></span>
-              </div>
-              <div class="nav-link-flex">
-                <a class="nav-link" href="speaker">Speaker Session</a>
-                <span class="ball-animation"></span>
-              </div> {% endcomment %}
-              <div class="nav-link-flex">
-                <a class="nav-link" href="code">Code O Clock</a>
-                <span class="ball-animation"></span>
-              </div>
-              <div class="nav-link-flex">
-                <a class="nav-link" href="clowncanard">The Clown Canard</a>
-                <span class="ball-animation"></span>
-              </div>
-              <a class="nav-empty-space" href="#">Empty</a>
-            </div>
+  <nav class="navbar navbar-expand-lg mr-auto">
+    <div class="container-fluid">
+      {% comment %} <a class="navbar-brand" href="#"><img class="sponsor-image"
+          src="{%static 'images/Hackonix-gold-O.png' %}" class="hackonix-o"></a> {% endcomment %}
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <div class="nav-link-flex">
+            <a class="nav-link" href="pixel">Pixel</a>
+            <span class="ball-animation"></span>
           </div>
+          <div class="nav-link-flex">
+            <a class="nav-link" href="wtb">What The Buzz</a>
+            <span class="ball-animation"></span>
+          </div>
+          {% comment %} <div class="nav-link-flex">
+            <a class="nav-link" href="movie">Movie Night</a>
+            <span class="ball-animation"></span>
+          </div>{%endcomment%}
+          <div class="nav-link-flex">
+            <a class="nav-link" href="speaker">Speaker Session</a>
+            <span class="ball-animation"></span>
+          </div>
+          <div class="nav-link-flex">
+            <a class="nav-link" href="code">Code O Clock</a>
+            <span class="ball-animation"></span>
+          </div>
+          <div class="nav-link-flex">
+            <a class="nav-link" href="clowncanard">The Clown Canard</a>
+            <span class="ball-animation"></span>
+          </div>
+          <a class="nav-empty-space" href="#">Empty</a>
         </div>
-      </nav>
+      </div>
+    </div>
+  </nav>
   {%for message in messages%}
   <center>
     <h3 style="color:white">{{message}}</h3>
