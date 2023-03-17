@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 class WTB(models.Model):
-    team_name=models.CharField(max_length=12,default="",null=True, blank=True)
+    team_name=models.CharField(max_length=50,default="",null=True, blank=True)
     # Team Leader
     leader_name= models.CharField(max_length=22, blank=False)
     leader_roll_no=models.CharField(max_length=9, blank=False)
@@ -23,7 +23,7 @@ class WTB(models.Model):
 
 
 class PTeam(models.Model):
-    team_name=models.CharField(max_length=12,default="",null=True, blank=True)
+    team_name=models.CharField(max_length=50,default="",null=True, blank=True)
     # Team Leader
     leader_name= models.CharField(max_length=22, blank=False)
     leader_roll_no=models.CharField(max_length=9, blank=False)
@@ -58,7 +58,7 @@ class Speaker(models.Model):
 
 
 class CodeOClock(models.Model):
-    team_name=models.CharField(max_length=12,default="",null=True, blank=True)
+    team_name=models.CharField(max_length=50,default="",null=True, blank=True)
     # Team Leader
     leader_name= models.CharField(max_length=22, blank=False)
     leader_roll_no=models.CharField(max_length=9, blank=False)
@@ -72,7 +72,7 @@ class CodeOClock(models.Model):
     teammate1_phone_no=models.CharField(max_length=50, default="",blank=True,null=True)
 
 class ClownCanard(models.Model):
-    team_name=models.CharField(max_length=12,default="",null=True, blank=True)
+    team_name=models.CharField(max_length=50,default="",null=True, blank=True)
     # Team Leader
     leader_name= models.CharField(max_length=22, blank=False)
     leader_roll_no=models.CharField(max_length=9, blank=False)
