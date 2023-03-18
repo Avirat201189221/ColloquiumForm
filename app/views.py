@@ -86,7 +86,7 @@ def wtb(request):
         teammate2Email = request.POST.get("teammate2email")
         teammate2PhoneNumber = request.POST.get("teammate2pno")
 
-        team = PTeam(team_name=teamName, leader_name=leaderName, leader_roll_no=leaderRollNo, leader_thapar_email=leaderEmail,leader_phone_no=leaderPhoneNumber, teammate1_name=teammate1Name, teammate1_roll_no=teammate1RollNo, teammate1_thapar_email=teammate1Email,teammate1_phone_no=teammate1PhoneNumber, teammate2_name=teammate2Name,
+        team = WTB(team_name=teamName, leader_name=leaderName, leader_roll_no=leaderRollNo, leader_thapar_email=leaderEmail,leader_phone_no=leaderPhoneNumber, teammate1_name=teammate1Name, teammate1_roll_no=teammate1RollNo, teammate1_thapar_email=teammate1Email,teammate1_phone_no=teammate1PhoneNumber, teammate2_name=teammate2Name,
                              teammate2_roll_no=teammate2RollNo, teammate2_thapar_email=teammate2Email,teammate2_phone_no=teammate2PhoneNumber)
         team.save()
 
