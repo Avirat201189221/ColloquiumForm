@@ -31,11 +31,9 @@ def pixel(request):
         team = PTeam(team_name=teamName, leader_name=leaderName, leader_roll_no=leaderRollNo, leader_thapar_email=leaderEmail,leader_phone_no=leaderPhoneNumber, teammate1_name=teammate1Name, teammate1_roll_no=teammate1RollNo, teammate1_thapar_email=teammate1Email,teammate1_phone_no=teammate1PhoneNumber, teammate2_name=teammate2Name,
                              teammate2_roll_no=teammate2RollNo, teammate2_thapar_email=teammate2Email,teammate2_phone_no=teammate2PhoneNumber)
         team.save()
+        return render(request,"register-success.html")
     return render(request, "pixel.html") 
 
-def sucess(request):
-
-    return render(request,"success.html")
 
 def mn(request):
     if request.method == "POST":
@@ -49,6 +47,7 @@ def mn(request):
 
         team = Movie( leader_name=leaderName, leader_roll_no=leaderRollNo, leader_thapar_email=leaderEmail,leader_phone_no=leaderPhoneNumber)
         team.save()
+        return render(request,"register-success.html")
     return render(request,"mn.html")
 
 def speaker(request):
@@ -62,7 +61,7 @@ def speaker(request):
 
         team = Speaker( leader_name=leaderName, leader_roll_no=leaderRollNo, leader_thapar_email=leaderEmail,leader_phone_no=leaderPhoneNumber)
         team.save()
-
+        return render(request,"register-success.html")
 
     return render(request,"speaker.html")
 
@@ -89,7 +88,7 @@ def wtb(request):
         team = WTB(team_name=teamName, leader_name=leaderName, leader_roll_no=leaderRollNo, leader_thapar_email=leaderEmail,leader_phone_no=leaderPhoneNumber, teammate1_name=teammate1Name, teammate1_roll_no=teammate1RollNo, teammate1_thapar_email=teammate1Email,teammate1_phone_no=teammate1PhoneNumber, teammate2_name=teammate2Name,
                              teammate2_roll_no=teammate2RollNo, teammate2_thapar_email=teammate2Email,teammate2_phone_no=teammate2PhoneNumber)
         team.save()
-
+        return render(request,"register-success.html")
     return render(request,"wtb.html")
 
 def code(request):
@@ -110,6 +109,7 @@ def code(request):
 
         team = CodeOClock(team_name=teamName, leader_name=leaderName, leader_roll_no=leaderRollNo, leader_thapar_email=leaderEmail,leader_phone_no=leaderPhoneNumber, teammate1_name=teammate1Name, teammate1_roll_no=teammate1RollNo, teammate1_thapar_email=teammate1Email,teammate1_phone_no=teammate1PhoneNumber)
         team.save()
+        return render(request,"register-success.html")
 
     return render(request,"codeoclock.html")
 
@@ -136,6 +136,6 @@ def cc(request):
         team = ClownCanard(team_name=teamName, leader_name=leaderName, leader_roll_no=leaderRollNo, leader_thapar_email=leaderEmail,leader_phone_no=leaderPhoneNumber, teammate1_name=teammate1Name, teammate1_roll_no=teammate1RollNo, teammate1_thapar_email=teammate1Email,teammate1_phone_no=teammate1PhoneNumber, teammate2_name=teammate2Name,
                              teammate2_roll_no=teammate2RollNo, teammate2_thapar_email=teammate2Email,teammate2_phone_no=teammate2PhoneNumber)
         team.save()
-
+        return render(request,"register-success.html")
 
     return render(request,"theclowncanard.html")
