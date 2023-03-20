@@ -10,16 +10,16 @@ class WTB(models.Model):
     leader_phone_no=models.CharField(max_length=50, blank=False)
 
     # Teammate 1
-    teammate1_name= models.CharField(max_length=22, blank=False)
-    teammate1_roll_no=models.CharField(max_length=9, blank=False)
-    teammate1_thapar_email=models.CharField(max_length=50,  blank=False)
-    teammate1_phone_no=models.CharField(max_length=50, blank=False)
+    teammate1_name= models.CharField(max_length=22, default="",null=True, blank=True)
+    teammate1_roll_no=models.CharField(max_length=9, default="",null=True, blank=True)
+    teammate1_thapar_email=models.CharField(max_length=50,  default="",null=True, blank=True)
+    teammate1_phone_no=models.CharField(max_length=50, default="",null=True, blank=True)
 
     # Teammate 2
-    teammate2_name= models.CharField(max_length=22, blank=False)
-    teammate2_roll_no=models.CharField(max_length=9, blank=False)
-    teammate2_thapar_email=models.CharField(max_length=50, blank=False)
-    teammate2_phone_no=models.CharField(max_length=50, blank=False)
+    teammate2_name= models.CharField(max_length=22, default="",null=True, blank=True)
+    teammate2_roll_no=models.CharField(max_length=9, default="",null=True, blank=True)
+    teammate2_thapar_email=models.CharField(max_length=50, default="",null=True, blank=True)
+    teammate2_phone_no=models.CharField(max_length=50, default="",null=True, blank=True)
 
 
 class PTeam(models.Model):
@@ -31,16 +31,16 @@ class PTeam(models.Model):
     leader_phone_no=models.CharField(max_length=50, blank=False)
 
     # Teammate 1
-    teammate1_name= models.CharField(max_length=22, blank=False)
-    teammate1_roll_no=models.CharField(max_length=9, blank=False)
-    teammate1_thapar_email=models.CharField(max_length=50,  blank=False)
-    teammate1_phone_no=models.CharField(max_length=50, blank=False)
+    teammate1_name= models.CharField(max_length=22, default="",null=True, blank=True)
+    teammate1_roll_no=models.CharField(max_length=9, default="",null=True, blank=True)
+    teammate1_thapar_email=models.CharField(max_length=50,  default="",null=True, blank=True)
+    teammate1_phone_no=models.CharField(max_length=50, default="",null=True, blank=True)
 
     # Teammate 2
-    teammate2_name= models.CharField(max_length=22, blank=False)
-    teammate2_roll_no=models.CharField(max_length=9, blank=False)
-    teammate2_thapar_email=models.CharField(max_length=50, blank=False)
-    teammate2_phone_no=models.CharField(max_length=50, blank=False)
+    teammate2_name= models.CharField(max_length=22, default="",null=True, blank=True)
+    teammate2_roll_no=models.CharField(max_length=9, default="",null=True, blank=True)
+    teammate2_thapar_email=models.CharField(max_length=50, default="",null=True, blank=True)
+    teammate2_phone_no=models.CharField(max_length=50, default="",null=True, blank=True)
 
 class Movie(models.Model):
     # Person
