@@ -1,4 +1,5 @@
 django>=4.0.2,<4.1.0
+django-import-export
 sqlalchemy
 virtualenv
 python-dotenv==0.21.0
