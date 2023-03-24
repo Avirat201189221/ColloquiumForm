@@ -14,7 +14,7 @@
   <link href="{% static 'css/navbar.css' %}" rel="stylesheet" />
 </head>
 
-<body>
+<body style="background:black;">
   <nav class="navbar navbar-expand-lg mr-auto">
     <div class="container-fluid">
       {% comment %} <a class="navbar-brand" href="#"><img class="sponsor-image"
@@ -66,7 +66,7 @@
             <img class="img"
             src="{%static 'img/What The Buzz logo white.png' %}" alt="logo img">
           </center>
-      <div class="title">Team Details</div>
+      {% comment %} <div class="title">Team Details</div>
       <form action="wtb" method="post">
         {% csrf_token %}
         <div class="user__details">
@@ -96,7 +96,6 @@
           
         </div>
 
-        {% comment %} Teammate 1 {% endcomment %}
         <div class="title">Teammate 1</div>
         <div class="user__details">
           <div class="input__box">
@@ -120,7 +119,6 @@
           </div>
         </div> 
 
-        {% comment %} Teammate 2 {% endcomment %}
         <div class="title">Teammate 2</div>
         <div class="user__details">
           <div class="input__box">
@@ -150,7 +148,7 @@
         <div class="button">
           <input type="submit" value="Submit" />
         </div>
-      </form>
+      </form> {% endcomment %}
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
