@@ -51,20 +51,14 @@
     </div>
   </nav>
 
-  {%for message in messages%}
-  <center>
-    <h3 style="color:white">{{message}}</h3>
-  </center>
-  {% endfor %}
   <div class="form-body">
     <div class="container">
       <center>
-        {% comment %} <h1 class="form-title">Code O Clock Registrations</h1> {% endcomment %}
         <img class="img"
         src="{%static 'img/Code oClock logo white.png' %}" alt="logo img">
         <div class="form-title" style="font-size:1.2rem;"><strong>Note: It is mandatory for everyone to register on the link below before filling the form</strong><hr><a href="http://bit.ly/3YBxExn" class="prelim-link" style="text-decoration:none;"> > Click This Link To Register For The Preliminary Round First!</a></div>
       </center>
-      <div class="title">Team Details</div>
+      {% comment %} <div class="title">Team Details</div>
       <form action="code" method="post">
         {% csrf_token %}
         <div class="user__details">
@@ -94,7 +88,7 @@
           </div>
         </div>
 
-        {% comment %} Teammate 1 {% endcomment %}
+
         <div class="title">Teammate 1</div>
         <div class="user__details">
           <div class="input__box">
@@ -121,7 +115,7 @@
         <div class="button">
           <input type="submit" value="Submit" />
         </div>
-      </form>
+      </form> {% endcomment %}
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
